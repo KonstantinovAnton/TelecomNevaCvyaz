@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="WindowGenerationCode" Height="450" Width="800">
     <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock FontSize="30" >Запомните код и введите его в окне авторизации</TextBlock>
+            <TextBlock Name="tbGeneratedCode" FontSize="50" VerticalAlignment="Center" Margin="0,20" HorizontalAlignment="Center"></TextBlock>
+            <Button FontSize="30" Name="btnBack" Width="160" Height="50" Click="btnBack_Click">Вернуться</Button>
+        </StackPanel>
+       
         
     </Grid>
 </Window>

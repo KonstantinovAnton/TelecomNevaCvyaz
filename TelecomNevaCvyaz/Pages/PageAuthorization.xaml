@@ -22,28 +22,29 @@
         </Grid.ColumnDefinitions>
 
         
-            <TextBlock FontSize="35" VerticalAlignment="Center" Margin="0,0,30,0" Grid.Column="0">Телеком Нева Связь</TextBlock>
+            <TextBlock  FontSize="35" VerticalAlignment="Center" Margin="40,0,30,0" Grid.Column="0">Телеком Нева Связь</TextBlock>
             <Image Source="/Resources/logo.jpg" Height="280" Width="280" Grid.Column="1"></Image>
         
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
-                <TextBlock Margin="0,0,10,0">Номер</TextBlock>
+                <TextBlock Margin="0,0,18,0">Номер</TextBlock>
                 <TextBox Name="tbNumber" Margin="20,0" Width="220" KeyDown="tbNumber_KeyDown"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
-                <TextBlock Margin="0,0,3,0">Пароль</TextBlock>
+                <TextBlock Margin="0,0,10,0" >Пароль</TextBlock>
                 <PasswordBox Name="passBox" Margin="20,0" Width="220" KeyDown="passBox_KeyDown"></PasswordBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
-                <TextBlock Margin="0,0,70,0">Код</TextBlock>
-                <TextBox  Margin="0,0,10,0" Width="177"></TextBox>
-                <Button Margin="0,0,25,0">
+                <TextBlock Margin="10,0,70,0">Код</TextBlock>
+                <TextBox Name="tbCode" Margin="0,0,10,0" Width="177" KeyDown="tbCode_KeyDown"></TextBox>
+                
+                <Button Name="btnGenerate" Click="btnGenerate_Click" Margin="0,0,25,0">
                     <Image Source="/Resources/На авторизацию_Обновление кода.jpg" Height="30" Width="30"/>
                 </Button>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
-                <Button Width="100" Margin="0,0,10,0">Отмена</Button>
-                <Button Width="100" Click="Button_Click">Вход</Button>
+                <Button Width="100" Margin="0,0,10,0" Click="Button_Click">Отмена</Button>
+                <Button Name="btnEnter" Width="100" Click="btnEnter_Click">Вход</Button>
             </StackPanel>
             
             

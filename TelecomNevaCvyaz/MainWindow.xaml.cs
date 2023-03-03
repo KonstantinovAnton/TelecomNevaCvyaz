@@ -20,10 +20,11 @@ namespace TelecomNevaCvyaz
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
-
+            Classes.Base.EM = new DataBase.Entities1();
             frm.Navigate(new Pages.PageAuthorization());
         }
     }
